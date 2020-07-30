@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 1.3em 0 1.3em 0;
+    display: flex;
+    line-height: 42px; /*Dica: usar 10px a mais que a font */
+    width: auto;
+    align-items: center;
+
+}
+
+.header-logo {
+    margin-top: 10px;
+
+}
+
+.header-menu {
+    text-align: center;
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.header-menu a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.walppaper-home {
+    background-color: #FBDFDB;
+    border-radius: 1em;
+    width: auto;
+    height: 20em;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caixa-texto {
+    text-align: left;
+    max-width: 28em;
+    max-height: 20em;
+    padding: 7em 0em 0em 2em;
+
+}
+
+.caixa-texto-titulo {
+    font-size: 32px;
+    margin-bottom: 0.4em;
+    
+}
+
+.caixa-texto-corpo {
+}
+
+.img-cozinheiro {
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+.img-cozinheiro img{
+    max-height: 18em;
+    margin-bottom: 100px;    
+}
