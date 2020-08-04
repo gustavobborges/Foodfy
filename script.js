@@ -5,6 +5,8 @@ for (let card of cards) {
     card.addEventListener("click", function() {
         const pageId = card.getAttribute("id")
         modalOverlay.classList.add('active')
+        modalOverlay.querySelector("iframe").src= `modals/${pageId}.html`;
+
     })
 }
 

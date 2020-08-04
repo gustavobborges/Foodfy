@@ -58,7 +58,7 @@ header{
 
 .caixa-texto {
     text-align: left;
-    max-width: 20em;
+    max-width: 17em;
     max-height: 20em;
     padding: 8em 0em 0em 2em;
     position: relative;
@@ -69,7 +69,8 @@ header{
 }
 
 .caixa-texto-titulo {
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 1.5rem;
     margin-bottom: 0.4em;
     
     
@@ -137,14 +138,12 @@ header{
 }
 
 .modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    
+    background-color: rgba(0, 0, 0, 0.7);  
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    
+    left: 0;  
     opacity: 0;
     visibility: hidden;
 }
@@ -154,16 +153,20 @@ header{
     height: 90%;
     margin: 4vh auto;
     position: relative;
+    border-radius: 2rem;
 
 }
 
 .modal .butt {
-    color: black;
+    color: #999999;
+    text-align: center;
+    cursor: pointer;
     position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer    
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .modal-overlay.active {
     opacity: 1;
@@ -172,4 +175,20 @@ header{
 
 .modal-content {
 
+}
+
+iframe {
+    width: 100%;;
+    height: 80%;
+    position: absolute;
+    top: 5%;
+}
+
+.sobre-title {
+    font-size: 24px;
+}
+
+.sobre-text {
+    font-size: 18px;
+    color: #444444;
 }

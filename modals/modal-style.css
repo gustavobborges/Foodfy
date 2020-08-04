@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-img img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.modal-img {
+    width: 100%;
+}
+
+.modal-titulo {
+    text-align: center;
+    font-size: 22px;    
+}
+.modal-chefe {
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+}
+
