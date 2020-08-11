@@ -10,8 +10,13 @@ html, body {height:100%;}
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    margin-left: 5em;
-    margin-right: 5em;
+    /* margin-left: 5em;
+    margin-right: 5em; */
+}
+
+#principal {
+	max-width: 70em;
+	margin: 0 auto;
 }
 
 header{
