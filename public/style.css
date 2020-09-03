@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html, body {height:100%;}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    /* margin-left: 5em;
+    margin-right: 5em; */
+}
+
+#principal {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 1.3em 0 1.3em 0;
+    display: flex;
+    line-height: 42px; /*Dica: usar 10px a mais que a font */
+    width: auto;
+    align-items: center;
+}
+
+.header-logo {
+    margin-top: 10px;
+}
+
+.header-menu {
+    text-align: center;
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.header-menu a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.walppaper-home {
+    background-color: #FBDFDB;
+    border-radius: 1em;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 23.7em;
+    grid-template-columns: 1fr 1fr;
+    border: solid 1px black;
+}
+
+.caixa-texto {
+    max-width: 17em;
+    max-height: 20em;
+    padding: 8em 0em 0em 2em;
+    position: relative;
+    /* left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)  */
+}
+
+.caixa-texto-titulo {
+    /* font-size: 32px; */
+    font-size: 1.5rem;
+    margin-bottom: 0.4em;
+ 
+}
+
+.caixa-texto-corpo {
+}
+
+.img-cozinheiro {
+    margin-bottom: 0px;
+    align-items: center;  
+}
+
+.img-cozinheiro img{
+    max-height: 30em;
+    margin-bottom: 100px;  
+    padding: 5em 0em 0em 2em;  
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%) 
+}
+
+.titulo-cardapios-index {
+    font-size: 24px;
+    margin-top: 50px;
+    /* text-shadow: black 0.1px 0.1px 0.1px; */
+}
+
+.cards-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-img img{
+    border-radius: 1rem;
+    width: 100%;  
+    margin: 1.5rem 0 1rem 0;
+  
+}
+
+.card-title {
+    font-size: 18px;
+    color: black;
+}
+
+.card-chefe {
+    margin-top: 0.3rem;
+    font-size: 14px;
+}
+
+.footer {
+    min-height: 3rem;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    
+}
+
+.footer p {
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%) 
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);  
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;  
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background-color: white;
+    width: 40% ;
+    height: 70%;
+    margin: 4vh auto;
+    position: relative;
+    border-radius: 2rem;
+
+}
+
+.modal .butt {
+    color: #999999;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+
+}
+
+iframe {
+    width: 100%;;
+    height: 80%;
+    position: absolute;
+    top: 5%;
+}
+
+.sobre-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.sobre-subtitle {
+    font-size: 20px;
+    margin: 1rem 0 1rem 0;
+}
+
+.sobre-text {
+    font-size: 18px;
+    color: #444444;
+}
