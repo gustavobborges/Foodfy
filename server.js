@@ -1,10 +1,15 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+// const routes = require("./routes")
+const methodOverride = require('method-override')
 
 const server = express()
 const recipes = require("./data")
 
+server.use(express.urlencoded({ extended:true }))
 server.use(express.static('public'))
+server.use(methodOverride('_method'))
+// server.use(routes)
 
 server.set("view engine", "njk")
 
@@ -15,12 +20,14 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-
     return res.render("home")
 })
 
-server.get("/recipes", function(req, res) {
+server.get("/about", function(req, res) {
+    return res.render("about")
+})
 
+server.get("/recipes", function(req, res) {
     return res.render("recipes")
 })
 
@@ -36,19 +43,13 @@ server.get("/recipes/:id", function(req, res) {
     }
 
     return res.render("recipe", {item: recipe})
-
     // const recipeIndex = req.params.index
     // console.log(recipes[recipeIndex])
     // return res.render(recipes[recipeIndex])
     // return res.render("recipe")
 })
 
-server.get("/about", function(res, res) {
-    return res.render("about")
-})
-
-
-server.use(function(req, res) {
+server.get(function(req, res) {
     res.status(404).render("not-found")
 })
 
